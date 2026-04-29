@@ -1,0 +1,30 @@
+Svelte Coder
+Copyright 2026 Kevin Miller, Jr.
+
+This product includes derivative work based on the following models
+released by Alibaba Cloud / Qwen Team under the Apache License,
+Version 2.0:
+
+  - Qwen3-Coder-14B
+    https://huggingface.co/Qwen/Qwen3-Coder-14B
+    Used as the base model for Svelte Coder 14B variant
+
+  - Qwen3-8B
+    https://huggingface.co/Qwen/Qwen3-8B
+    Used as the base model for Svelte Coder 8B variant
+
+  - Qwen3-4B
+    https://huggingface.co/Qwen/Qwen3-4B
+    Used as the base model for Svelte Coder 4B variant
+
+  - Qwen3-Coder-Next
+    https://huggingface.co/Qwen/Qwen3-Coder-Next
+    Used as the teacher model for synthetic training data generation
+
+The fine-tuning work, training scripts, evaluation tools, and
+derivative model weights in this repository are licensed under MIT
+(see LICENSE).
+
+Modifications: Base models were fine-tuned via LoRA adapters on a
+proprietary Svelte 5 / SvelteKit 2 specialist dataset. See README.md
+for methodology details.

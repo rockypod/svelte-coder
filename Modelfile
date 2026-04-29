@@ -1,0 +1,20 @@
+# Svelte Coder v0.9.0 — Svelte 5 / SvelteKit 2 specialist
+# Fine-tuned work licensed under MIT (see github.com/rockypod/svelte-coder)
+# Base model: Qwen3-Coder-14B (Apache 2.0) — Alibaba Cloud
+# Teacher: Qwen3-Coder-Next 80B (Apache 2.0) — Alibaba Cloud
+
+FROM ./svelte-coder-v0.9.0-q4_k_m.gguf
+
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+{{ .Response }}<|im_end|>"""
+
+SYSTEM """You are SvelteCoder, an expert Svelte 5 / SvelteKit 2 coding assistant. Answer the question with complete, production-quality code."""
+
+PARAMETER temperature 0.2
+PARAMETER num_ctx 8192
+PARAMETER num_predict 1500
+PARAMETER repeat_penalty 1.5

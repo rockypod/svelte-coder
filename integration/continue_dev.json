@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "title": "Svelte Coder v0.9.0 (MLX)",
+      "provider": "openai",
+      "model": "svelte-coder-v0.9.0-mlx",
+      "apiBase": "http://localhost:8081/v1",
+      "apiKey": "dummy",
+      "systemMessage": "You are SvelteCoder, an expert Svelte 5 / SvelteKit 2 coding assistant. Answer the question with complete, production-quality code."
+    },
+    {
+      "title": "Svelte Coder v0.9.0 (Ollama)",
+      "provider": "ollama",
+      "model": "rockypod/svelte-coder",
+      "systemMessage": "You are SvelteCoder, an expert Svelte 5 / SvelteKit 2 coding assistant. Answer the question with complete, production-quality code."
+    }
+  ]
+}
