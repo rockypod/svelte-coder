@@ -12,10 +12,10 @@ homelab RTX 3090 Ti using continuous retrieval-augmented fine-tuning
 ollama run rockypod/svelte-coder
 
 # 8B — for hardware where 14B doesn't fit
-ollama run rockypod/svelte-coder:v0.9.0-8b
+ollama run rockypod/svelte-coder:8b
 
 # 4B — edge hardware
-ollama run rockypod/svelte-coder:v0.9.0-4b
+ollama run rockypod/svelte-coder:4b
 ```
 
 ## Sizes
